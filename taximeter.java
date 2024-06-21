@@ -8,15 +8,15 @@ public class taximeter {
 
         System.out.print("Enter Your Kilometer:");
         double km = scan.nextDouble();
-        double taximeter = 2.20;
+        double perKmPrice = 2.20;
         double openingPrice = 10.00;
-        int sortDistance = 20;
+        int sortDistancePrice = 20;
 
-        double total = (taximeter * km) + (openingPrice);
+        double total = (perKmPrice * km) + (openingPrice);
 
-        if (km < sortDistance) {
+        if (km < sortDistancePrice) {
             
-            total = sortDistance;
+            total = sortDistancePrice;
 
             System.out.println("Sort Distance Price:" + total + " Turkish Lira");
 
